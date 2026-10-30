@@ -1,0 +1,5 @@
+# Run3 2025 data, MINIAOD -- one dataset per line, '#' to comment out
+/JetMET0/Run2025C-PromptReco-v1/MINIAOD
+/JetMET1/Run2025C-PromptReco-v1/MINIAOD
+/Muon0/Run2025C-PromptReco-v1/MINIAOD
+/Muon1/Run2025C-PromptReco-v1/MINIAOD

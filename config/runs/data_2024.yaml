@@ -1,0 +1,13 @@
+# 2024 data alone, Muon0, Muon1 and Tau: its preselection, for the data/MC comparison of
+# config/runs/data_vs_bkg.yaml. The later stages leave the data out (blinded).
+#   python3.12 -m run.launch config/runs/data_2024.yaml --slurm 100
+#   python3.12 -m run.launch config/runs/data_2024.yaml --rescan --slurm 100   production grown
+samples:
+  data:
+    split: data
+    production: Run2024
+    label: Data
+    # some eras only
+    #   match: /Run2024[CD]/
+
+to: preselection

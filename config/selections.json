@@ -1,0 +1,57 @@
+{
+  "preselection": {
+    "cuts": [
+      "chi2 < 5",
+      "dedx_hits > 9",
+      "dz < 0.3",
+      "dxy < 0.1",
+      "high_purity == true",
+      "sigma_pt_over_pt2 < 0.003",
+      "mini_rel_iso < 0.02",
+      "track_iso < 15",
+      "Ih > 3",
+      "pt > 50"
+    ]
+  },
+
+  "muon": {
+    "label": "muon channel",
+    "plot_dir": "Muon",
+    "triggers": ["HLT_Mu50", "HLT_IsoMu24", "HLT_IsoMu27"],
+    "primary_datasets": ["Muon0", "Muon1"],
+    "objects": {
+      "pf_type": 13,
+      "muon_id": "loose"
+    },
+    "cuts": [
+      "Ih > 6",
+      "inverse_beta > 1.25"
+    ],
+    "regions": {}
+  },
+
+  "tau": {
+    "label": "tau channel",
+    "plot_dir": "Tau",
+    "triggers": [
+      "HLT_DoubleMediumDeepTauPFTauHPS35_L2NN_eta2p1",
+      "HLT_DoublePNetTauhPFJet30_Medium_L2NN_eta2p3",
+      "HLT_DoubleMediumDeepTauPFTauHPS30_L2NN_eta2p1_OneProng"
+    ],
+    "primary_datasets": ["Tau"],
+    "objects": {
+      "pf_type": 211,
+      "tau_pt_min": 50
+    },
+    "cuts": [
+      "Ih > 15"
+    ],
+    "regions": {}
+  },
+
+  "comb": {
+    "label": "muon + tau combined",
+    "plot_dir": "Comb",
+    "combine": ["muon", "tau"]
+  }
+}

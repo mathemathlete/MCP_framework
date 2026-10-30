@@ -1,0 +1,26 @@
+# 2024 data against the 2024 backgrounds, after the preselection: one comparison per
+# channel (its triggers, its primary datasets, see config/selections.json). The data
+# goes through the preselection only, the later stages leave it out.
+# Preselect the data alone first (config/runs/data_2024.yaml), the backgrounds being
+# done by config/runs/bkg_2024.yaml:
+#   python3.12 -m run.launch config/runs/data_2024.yaml --slurm 100
+#   python3.12 -m run.launch config/runs/data_vs_bkg.yaml --only control_plots --step preselection
+samples:
+  DY:
+    split: dataset
+    production: BKG_DY_2024
+    xsec: data/cross_sections/bkg_DY_2024.csv
+    label: Drell-Yan
+  WJets:
+    split: dataset
+    production: BKG_WJets_2024
+    xsec: data/cross_sections/bkg_WJets_2024.csv
+    label: W+jets
+  data:
+    split: data
+    production: Run2024
+    label: Data
+    # some eras only
+    #   match: /Run2024[CD]/
+
+norm: events

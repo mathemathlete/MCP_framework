@@ -1,0 +1,22 @@
+dataset                                                   , xsec_pb  , xsec_err_pb, neg_weight_frac
+DYto2Mu_Bin-MLL-200to400_TuneCP5_13p6TeV_powheg-pythia8   , 3.058    , 0.000329   , 0.002078
+DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8   , 0.2691   , 2.98e-05   , 0.0005158
+DYto2Mu_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8  , 0.01915  , 2.18e-06   , 8.948e-05
+DYto2Mu_Bin-MLL-1500to2500_TuneCP5_13p6TeV_powheg-pythia8 , 0.001111 , 1.26e-07   , 1.809e-05
+DYto2Mu_Bin-MLL-2500to4000_TuneCP5_13p6TeV_powheg-pythia8 , 5.949e-05, 6.48e-09   , 5.574e-06
+DYto2Mu_Bin-MLL-4000to6000_TuneCP5_13p6TeV_powheg-pythia8 , 1.558e-06, 1.47e-10   , 0
+DYto2Mu_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8       , 3.519e-08, 4.82e-12   , 0
+DYto2Tau_Bin-MLL-200to400_TuneCP5_13p6TeV_powheg-pythia8  , 3.058    , 0.000329   , 0.002037
+DYto2Tau_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8  , 0.2691   , 2.98e-05   , 0.0005874
+DYto2Tau_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8 , 0.01915  , 2.18e-06   , 0.0001109
+DYto2Tau_Bin-MLL-1500to2500_TuneCP5_13p6TeV_powheg-pythia8, 0.001111 , 1.26e-07   , 1.557e-05
+DYto2Tau_Bin-MLL-2500to4000_TuneCP5_13p6TeV_powheg-pythia8, 5.949e-05, 6.48e-09   , 6.196e-06
+DYto2Tau_Bin-MLL-4000to6000_TuneCP5_13p6TeV_powheg-pythia8, 1.558e-06, 1.47e-10   , 0
+DYto2Tau_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8      , 3.519e-08, 4.82e-12   , 0
+DYto2E_Bin-MLL-200to400_TuneCP5_13p6TeV_powheg-pythia8    , 3.058    , 0.000329   , 0.002132
+DYto2E_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8    , 0.2691   , 2.98e-05   , 0.0005617
+DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8   , 0.01915  , 2.18e-06   , 0.000115
+DYto2E_Bin-MLL-1500to2500_TuneCP5_13p6TeV_powheg-pythia8  , 0.001111 , 1.26e-07   , 1.509e-05
+DYto2E_Bin-MLL-2500to4000_TuneCP5_13p6TeV_powheg-pythia8  , 5.949e-05, 6.48e-09   , 1.401e-06
+DYto2E_Bin-MLL-4000to6000_TuneCP5_13p6TeV_powheg-pythia8  , 1.558e-06, 1.47e-10   , 1.247e-06
+DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8        , 3.519e-08, 4.82e-12   , 0

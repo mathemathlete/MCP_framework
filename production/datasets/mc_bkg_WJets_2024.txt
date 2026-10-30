@@ -1,0 +1,8 @@
+# Background W+jets inclusive, Run3 2024 -- RunIII2024Summer24MiniAODv6 (MINIAODSIM)
+# Run2 WJetsToLNu amcatnloFXFX equivalent: split by lepton flavour in 2024, sum of the 3 = inclusive W->lnu
+# 3 datasets, ~38400 files, ~1.59B events -- all VALID with disk replicas
+# do NOT combine with mc_bkg_WJets_PTLNu_2024.txt (overlap)
+# generated from DAS on 2026-10-21
+/WtoENu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v3/MINIAODSIM
+/WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v3/MINIAODSIM
+/WtoTauNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v3/MINIAODSIM

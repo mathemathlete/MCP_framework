@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+
+*.pdf
+*.png
+*.root
+*.pkl
+*.log
+
+results/
+
+production/crab_projects/
+production/crab_configs/
+production/logs/*/*/status/
+production/logs/*/*/status.csv
+production/logs/*/*/killed_*/

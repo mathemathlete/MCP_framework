@@ -1,0 +1,18 @@
+# 2024 backgrounds alone: preselection, selections and yields per dataset and process.
+#   python3.12 -m run.launch config/runs/bkg_2024.yaml --to efficiency_map --slurm 100
+# W+jets is ~38k files (~1.6G events): run it on SLURM.
+samples:
+  DY:
+    split: dataset
+    production: BKG_DY_2024
+    xsec: data/cross_sections/bkg_DY_2024.csv
+    label: Drell-Yan
+  WJets:
+    split: dataset
+    production: BKG_WJets_2024
+    xsec: data/cross_sections/bkg_WJets_2024.csv
+    label: W+jets
+    # one flavour only
+    #   match: WtoMuNu
+
+lumi: 376.81    # fb^-1 of the yields

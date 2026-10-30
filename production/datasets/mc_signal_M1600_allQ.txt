@@ -1,0 +1,23 @@
+# MCP spin 1/2, M = 1600 GeV, every charge available in DAS -- HSCP-MCP_Par-S-0p5
+# RunIII2024Summer24MiniAODv6 (MINIAODSIM, Run3 2024)
+# Q in units of e/3: 1e..16e, 20e (Q-60), 24e (Q-72), 30e (Q-90) = 19 datasets
+# generated from DAS on 2026-10-06
+/HSCP-MCP_Par-S-0p5-M-1600-Q-3_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-6_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-9_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-12_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-15_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-18_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-21_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-24_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-27_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-30_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-33_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-36_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-39_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-42_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-45_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-48_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-60_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-72_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM
+/HSCP-MCP_Par-S-0p5-M-1600-Q-90_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24MiniAODv6-150X_mcRun3_2024_realistic_v2-v2/MINIAODSIM

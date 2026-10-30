@@ -1,0 +1,14 @@
+# A single ntuple: quick test of the chain. <prod>/<version> is read from the path.
+# The checkpoint of M1200_Q4 would replace the one of the full point: test on another
+# scratch (a later full run refuses it anyway, it was written from 1 file).
+#   MCP_SCRATCH=/tmp/$USER/mcp_test python3.12 -m run.launch config/runs/one_file.yaml
+samples:
+  test:
+    split: grid
+    files:
+      - root://sbgdcache.in2p3.fr//cms/phedex/store/user/xmadre/HSCP/MCP_spin0p5_Q1to20/v1/MCP_spin0p5/Q-4e/M-1200/HSCP-MCP_Par-S-0p5-M-1200-Q-12_TuneCP5_13p6TeV_madgraphMLM-pythia8/MCP_spin0p5_Q1to20_v1/261026_112221/0000/output_1.root
+    # or a regex on the URLs of a production
+    #   production: MCP_spin0p5_Q1to20
+    #   match: M-1200/.*/output_1\.root$
+to: preselection
+workers: 4

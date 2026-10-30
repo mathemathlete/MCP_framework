@@ -1,0 +1,20 @@
+{
+  "pf_type == 13": "PF muon",
+  "pt > 50": "$p_T > 50$",
+  "chi2 < 5": "$\\chi^2 < 5$",
+  "dedx_hits > 9": "$N_{dE/dx} > 9$",
+  "high_purity == true": "highPurity",
+  "dz < 0.3": "$d_z < 0.3$",
+  "dxy < 0.1": "$d_{xy} < 0.1$",
+  "sigma_pt_over_pt2 < 0.003": "$\\sigma_{p_T}/p_T^2$",
+  "mini_rel_iso < 0.02": "miniRelIso",
+  "track_iso < 15": "trackIso",
+  "Ih > 3": "$I_h > 3$",
+  "Ih > 6": "$I_h > 6$",
+  "medium_muon == true": "MediumMuon",
+  "inverse_beta > 1.25": "$1/\\beta > 1.25$",
+  "loose_muon == true": "LooseMuon",
+  "pf_type == 211": "PF hadron",
+  "pt_tau > 50": "$p_T^{\\tau} > 50$",
+  "Ih > 15": "$I_h > 15$"
+}

@@ -1,0 +1,15 @@
+# Signal grid, every production at its latest version (see core/samples.py).
+#   python3.12 -m run.launch config/runs/signal.yaml
+samples:
+  signal:
+    split: grid
+    production: MCP_spin0p5_Q1to20
+    # several productions: a point present in both is taken from the first one,
+    # so this adds 24e and 30e at 1600 GeV to the grid
+    #   production: [MCP_spin0p5_Q1to20, MCP_spin0p5_M1600_allQ]
+    # part of the grid
+    #   mass: [1200, 1600]
+    #   charge: [1, 4]
+
+# to: efficiency_map      stop once the maps are written
+# workers: 32

@@ -1,0 +1,4 @@
+dataset,xsec_pb,xsec_err_pb,neg_weight_frac,genxsec_raw_pb,note
+WtoENu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8,22696.7,38,0.1594,68090,"GenXSec = 3 flavours, divided by 3 (checked vs PTLNu bins)"
+WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8,22786.7,90,0.1594,68360,"GenXSec = 3 flavours, divided by 3 (checked vs PTLNu bins)"
+WtoTauNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8,22713.3,35.7,0.1599,68140,"GenXSec = 3 flavours, divided by 3 (checked vs PTLNu bins)"

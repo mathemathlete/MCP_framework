@@ -1,0 +1,20 @@
+# Signal at one mass and the 2024 backgrounds, for the control plots.
+#   python3.12 -m run.launch config/runs/signal_vs_bkg.yaml --to control_plots
+samples:
+  signal:
+    split: grid
+    production: MCP_spin0p5_Q1to20
+    mass: [1200]
+  DY:
+    split: dataset
+    production: BKG_DY_2024
+    xsec: data/cross_sections/bkg_DY_2024.csv
+    label: Drell-Yan
+  WJets:
+    split: dataset
+    production: BKG_WJets_2024
+    xsec: data/cross_sections/bkg_WJets_2024.csv
+    label: W+jets
+
+lumi: 376.81    # fb^-1, Run 3 scenario of analyses/limits
+norm: events    # control plots: expected events (shape, efficiency, events)
