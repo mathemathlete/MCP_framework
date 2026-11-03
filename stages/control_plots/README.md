@@ -61,7 +61,7 @@ only, one comparison per channel having `primary_datasets` in
   normtag), cached with its JSON mask under `<scratch>/lumi/`; the backgrounds are
   normalised to it, whatever `--norm` and `--lumi`;
 - outputs in `Preselection/DataMC_<folder>/`: `best/<variable>.pdf` (stack, data with
-  its 68% Poisson interval, data/MC with the MC statistical band) and `yields.txt`
+  its 68% Poisson interval, data/MC) and `yields.txt`
   (expected events per process, data, data/MC).
 
 ```bash
@@ -82,6 +82,7 @@ candidate field (see `core/selection/candidates.py`):
 ```
 
 - values outside `range` go into the first/last bin;
+- `"data_mc": {"bins": 40, "range": [0, 20]}`: binning of the Data/MC plots only;
 - candidates without a value (no muon for `inverse_beta`, no tau for
   `pt_tau`, `NO_VALUE = -999`) are not counted;
 - `n_candidates` is special: the number of surviving candidates per event.

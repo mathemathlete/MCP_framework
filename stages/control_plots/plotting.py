@@ -10,8 +10,7 @@ Normalisations (`norm`):
                 backgrounds (w = generator x pileup weight)
 
 Data/MC: the backgrounds stacked for the luminosity of the data (events), the data as
-points with their Poisson (Garwood) 68% interval, data/MC below with the MC statistical
-band.
+points with their Poisson (Garwood) 68% interval, data/MC below.
 
 Out-of-range values are folded into the first/last bin.
 """
@@ -161,18 +160,14 @@ def plot_data_mc(data, backgrounds, variable, title, outpath, all_candidates=Fal
 
     fig, (ax, ax_ratio) = plt.subplots(2, 1, figsize=(12, 10), sharex=True,
                                        gridspec_kw={"height_ratios": [3, 1], "hspace": 0.05})
-    edges, centers = observed.axes[0].edges, observed.axes[0].centers
+    centers = observed.axes[0].centers
     n_data = observed.values()
     mc = np.zeros_like(n_data)
-    mc_err = np.zeros_like(n_data)
     if stack:
         palette = [BACKGROUND_COLORS[i % len(BACKGROUND_COLORS)] for i in range(len(stack))]
         mplhep.histplot([h for _, h in stack], ax=ax, stack=True, histtype="fill", flow="none",
                         color=palette, label=[label for label, _ in stack])
         mc = sum(h.values() for _, h in stack)
-        mc_err = np.sqrt(sum(h.variances() for _, h in stack))
-        ax.stairs(mc + mc_err, edges, baseline=mc - mc_err, fill=True, facecolor="none",
-                  edgecolor="0.3", hatch="///", linewidth=0, label="MC stat.")
     shown = n_data > 0
     down, up = poisson_errors(n_data)
     ax.errorbar(centers[shown], n_data[shown], yerr=(down[shown], up[shown]), fmt="o",
@@ -193,11 +188,9 @@ def plot_data_mc(data, backgrounds, variable, title, outpath, all_candidates=Fal
 
     with np.errstate(divide="ignore", invalid="ignore"):
         filled = mc > 0
-        band = np.where(filled, mc_err / mc, 0.0)
         ratio = np.where(filled & shown, n_data / mc, np.nan)
         ratio_err = (np.where(filled & shown, down / mc, np.nan),
                      np.where(filled & shown, up / mc, np.nan))
-    ax_ratio.stairs(1 + band, edges, baseline=1 - band, fill=True, color="0.85")
     ax_ratio.errorbar(centers, ratio, yerr=ratio_err, fmt="o", color="black", markersize=4)
     ax_ratio.axhline(1, color="0.5", linestyle="--", linewidth=1)
     ax_ratio.set_ylim(0.5, 1.5)

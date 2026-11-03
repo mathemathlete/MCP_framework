@@ -47,6 +47,7 @@ class Variable:
     bins: int
     range: tuple
     logy: bool = False
+    data_mc: "Variable | None" = None
 
 
 @dataclass
@@ -116,10 +117,15 @@ def steps():
     return out
 
 
+def _variable(name, e, data_mc=None):
+    return Variable(name, e.get("label", name), int(e["bins"]), tuple(e["range"]),
+                    bool(e.get("logy", False)), data_mc)
+
+
 def load_variables(path=VARIABLES_CONFIG):
     entries = json.loads(path.read_text())
-    return [Variable(name, e.get("label", name), int(e["bins"]), tuple(e["range"]),
-                     bool(e.get("logy", False))) for name, e in entries.items()]
+    return [_variable(name, e, _variable(name, {**e, **e["data_mc"]}) if "data_mc" in e else None)
+            for name, e in entries.items()]
 
 
 def available(step, samples):

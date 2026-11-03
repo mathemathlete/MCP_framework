@@ -17,6 +17,7 @@ from core.plotting import apply_cms_style, cms_label  # noqa: F401
 from core.plotting import save as _save
 
 RLABEL = "MiniAOD 2024 (13.6 TeV)"
+ZRANGE = (1e-5, 1.0)
 
 
 def _grid_hists(emap):
@@ -42,8 +43,7 @@ def plot_map(emap, outpath):
 
     fig, ax = plt.subplots(figsize=(16, 8))
 
-    nonzero = values[values > 0]
-    norm = LogNorm(vmin=nonzero.min(), vmax=nonzero.max()) if nonzero.size else None
+    norm = LogNorm(*ZRANGE)
     cmap = plt.get_cmap("cividis").copy()
     cmap.set_bad("white")
 
@@ -51,7 +51,7 @@ def plot_map(emap, outpath):
     colorbar = getattr(art, "cbar", None) or fig.axes[-1]
     (colorbar.ax if hasattr(colorbar, "ax") else colorbar).set_ylabel("Efficiency")
 
-    vmid = np.sqrt(nonzero.min() * nonzero.max()) if nonzero.size else 0.0
+    vmid = np.sqrt(ZRANGE[0] * ZRANGE[1])
     for i in range(len(emap.grid_masses)):
         for j in range(len(emap.grid_charges)):
             if initial[i, j] <= 0:

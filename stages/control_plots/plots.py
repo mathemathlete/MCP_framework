@@ -108,7 +108,7 @@ def plot_data_mc(step, data, background, variables, args):
         title = f"{step.label}, {channel.label} triggers"
         for variable in variables:
             if variable.name in fields:
-                plotting.plot_data_mc(observed, mc, variable, title,
+                plotting.plot_data_mc(observed, mc, variable.data_mc or variable, title,
                                       outdir / tag / f"{variable.name}.pdf",
                                       args.all_candidates, luminosity)
 

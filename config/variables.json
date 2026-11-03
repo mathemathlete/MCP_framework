@@ -4,7 +4,7 @@
   "phi":               {"label": "$\\phi$",                      "bins": 50, "range": [-3.1416, 3.1416]},
   "p_track":           {"label": "$p$ [GeV]",                    "bins": 60, "range": [0, 6000],   "logy": true},
   "pt_track":          {"label": "$p_T^{track}$ [GeV]",          "bins": 60, "range": [0, 3000],   "logy": true},
-  "Ih":                {"label": "$I_h$ [MeV/cm]",               "bins": 80, "range": [0, 80],     "logy": true},
+  "Ih":                {"label": "$I_h$ [MeV/cm]",               "bins": 80, "range": [0, 80],     "logy": true, "data_mc": {"bins": 40, "range": [0, 20]}},
   "dedx_hits":         {"label": "$N_{dE/dx}$",                  "bins": 40, "range": [0, 40]},
   "tracker_hits":      {"label": "$N_{hits}^{tracker}$",         "bins": 40, "range": [0, 40]},
   "chi2":              {"label": "$\\chi^2/ndf$",                "bins": 50, "range": [0, 5],      "logy": true},
